@@ -1,10 +1,10 @@
 import React from 'react'
 import logo from '../assets/Logo.png'
 import twitter from '../assets/SocialMedia/twitter.png'
-import pinest from '../assets/SocialMedia/Pinest.png'
+import pinterest from '../assets/SocialMedia/pinterest.png'
 import instagram from '../assets/SocialMedia/instagram.png'
-import youtube from '../assets/SocialMedia/twitter.png'
-import facebook from '../assets/SocialMedia/Youtube.png'
+import youtube from '../assets/SocialMedia/youtube.png'
+import facebook from '../assets/SocialMedia/facebook.png'
 
 
 const Footer = () => {
@@ -19,7 +19,7 @@ const Footer = () => {
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero inventore error fuga debitis qui consectetur saepe enim. Esse, deleniti fugiat.</p>
             <div className='flex gap-2'>
                 <img src={twitter} alt="" />
-                <img src={pinest} alt="" />
+                <img src={pinterest} alt="" />
                 <img src={instagram} alt="" />
                 <img src={youtube} alt="" />
                 <img src={facebook} alt="" />
