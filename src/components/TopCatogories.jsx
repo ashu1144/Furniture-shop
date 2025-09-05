@@ -1,34 +1,11 @@
 import React from 'react'
 import leftArrow from '../assets/leftArrow.png'
 import rightArrow from '../assets/rightArrow.png'
-import cat1 from '../assets/Topcat/image (4).png'
-import cat2 from '../assets/Topcat/image (5).png'
-import cat3 from '../assets/Topcat/image (6).png'
+import { topcatList } from '../Constant';
 import {easeOut, motion } from "framer-motion";
 
 
 const TopCatogories = () => {
-
-    const topcatList = [
-        {id:0,img:cat1,titile:"Wing Char"},
-        {id:0,img:cat2,titile:"Wooden chair"},
-        {id:0,img:cat3,titile:"Desl chair"},
-        {id:0,img:cat1,titile:"Wing Char"},
-        {id:0,img:cat2,titile:"Wooden chair"},
-        {id:0,img:cat3,titile:"Desl chair"},
-        {id:0,img:cat1,titile:"Wing Char"},
-        {id:0,img:cat2,titile:"Wooden chair"},
-        {id:0,img:cat3,titile:"Desl chair"},
-        {id:0,img:cat1,titile:"Wing Char"},
-        {id:0,img:cat2,titile:"Wooden chair"},
-        {id:0,img:cat3,titile:"Desl chair"},
-        {id:0,img:cat1,titile:"Wing Char"},
-        {id:0,img:cat2,titile:"Wooden chair"},
-        {id:0,img:cat3,titile:"Desl chair"},
-        {id:0,img:cat1,titile:"Wing Char"},
-        {id:0,img:cat2,titile:"Wooden chair"},
-        {id:0,img:cat3,titile:"Desl chair"},
-    ]
 
 
   return (
