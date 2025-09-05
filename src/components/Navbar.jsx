@@ -2,7 +2,7 @@ import React from 'react'
 import logo from '../assets/Logo.png'
 import search from '../assets/search1.png'
 import cart from '../assets/cart.png'
-import heart from '../assets/heart 1.png'
+import heart from '../assets/heart1.png'
 import profile from '../assets/Profile.png'
 import { useNavigate } from 'react-router-dom';
 
