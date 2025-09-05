@@ -1,10 +1,10 @@
 import image from './assets/FeaturedProducts/image.png'
-import image1 from './assets/FeaturedProducts/image(1).png'
-import image2 from './assets/FeaturedProducts/image(2).png'
-import image3 from './assets/FeaturedProducts/image(3).png'
-import cat1 from './assets/Topcat/Image(4).png'
-import cat2 from './assets/Topcat/Image(5).png'
-import cat3 from './assets/Topcat/Image(6).png'
+import image1 from './assets/FeaturedProducts/image1.png'
+import image2 from './assets/FeaturedProducts/image2.png'
+import image3 from './assets/FeaturedProducts/image3.png'
+import cat1 from './assets/Topcat/image4.png'
+import cat2 from './assets/Topcat/image5.png'
+import cat3 from './assets/Topcat/image6.png'
 
 export const FeatureProductsList = [{id:0 ,img:image,title:"Library stool chair",price:"$20"},
     {id:1 ,img:image1,title:"Library stool chair",price:"$20"},

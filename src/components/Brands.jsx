@@ -1,11 +1,11 @@
 import React from 'react'
-import logo1 from '../assets/Logo/logo(1).png'
-import logo2 from '../assets/Logo/logo(2).png'
-import logo3 from '../assets/Logo/logo(3).png'
-import logo4 from '../assets/Logo/logo(4).png'
-import logo5 from '../assets/Logo/logo(5).png'
-import logo6 from '../assets/Logo/logo(6).png'
-import logo7 from '../assets/Logo/logo(7).png'
+import logo1 from '../assets/Logo/logo1.png'
+import logo2 from '../assets/Logo/logo2.png'
+import logo3 from '../assets/Logo/logo3.png'
+import logo4 from '../assets/Logo/logo4.png'
+import logo5 from '../assets/Logo/logo5.png'
+import logo6 from '../assets/Logo/logo6.png'
+import logo7 from '../assets/Logo/logo7.png'
 import {easeOut, motion } from "framer-motion";
 const Brands = () => {
 
