@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Slides from './Slides'
-import bg1 from '../assets/bg.png'
+import bg1 from '../assets/background.png'
 import leftArrow from '../assets/leftArrow.png'
 import rightArrow from '../assets/rightArrow.png'
 import shield from '../assets/shield.png'
