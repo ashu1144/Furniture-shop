@@ -18,7 +18,7 @@ const Brands = () => {
         {id:7,img:logo7}]
 
   return (
-    <div className='max-w-[70vw] m-auto flex justify-between items-center'>
+    <div className='max-w-[70vw] max-sm:max-w-[100vw] max-sm:px-5 max-sm:py-1 gap-2 m-auto flex justify-between items-center'>
         {logo.map((el,index)=>(
           <motion.div
             initial={{y:20 , opacity:0}}

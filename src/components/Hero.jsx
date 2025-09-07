@@ -10,9 +10,12 @@ import clock from '../assets/24-hours.png'
 import {easeOut, motion } from "framer-motion";
 import slideimg2 from '../assets/image1.png'
 import slideimg3 from '../assets/image2.png'
-
+import useIsMobile from './useIsMobile'
 
 const Hero = () => {
+
+    const ismobile = useIsMobile();
+
 
     const slideContent = [
         {id:2,
@@ -49,8 +52,8 @@ const Hero = () => {
   return (
     <div id='home' className='w-full bg-white'>
         <div></div>
-        <div className='max-w-[85vw] m-auto bg-[#F0F2F3] rounded-b-[100px]  relative -mb-[50px] overflow-hidden '>
-           <div className='flex  h-[85vh] transition-all duration-300 ease-in-out' style={{transform:`translateX(${-count*85}vw)  `}} > {slideContent.map((el)=>(<Slides key={el.id} img={el.img} content={el.desc} ></Slides>))}</div>
+        <div className='max-w-[85vw] max-sm:max-w-[100vw] max-sm:h-[50vw]   m-auto bg-[#F0F2F3] rounded-b-[100px] max-sm:mb-0  relative -mb-[50px] overflow-hidden '>
+           <div className='flex  h-[85vh] transition-all duration-300 ease-in-out'style={{transform: `translateX(-${count * (ismobile ? 100 : 85)}vw)`}} > {slideContent.map((el)=>(<Slides key={el.id} img={el.img} content={el.desc} ></Slides>))}</div>
             <button className='absolute left-2 top-1/2 z-999 p-2 border-2 border-zinc-500 rounded-full' onClick={()=>move("left")}><img src={leftArrow} alt="" /></button>
             <button className='absolute right-2 top-1/2 z-999 p-2 border-2 border-zinc-500 rounded-full' onClick={()=>move("right")}   ><img src={rightArrow} alt="" /></button>
         </div>
@@ -60,15 +63,15 @@ const Hero = () => {
             transition={{duration:0.3 , ease:easeOut , delay:0.1}}
             viewport={{once:"true"}}
         
-        className='max-w-[70vw] m-auto bg-white flex gap-10 rounded-2xl z-10 relative p-10'>
+        className='max-w-[70vw] max-sm:max-w-[100vw] m-auto bg-white flex gap-10 max-sm:gap-10 rounded-2xl z-10 relative p-10 max-sm:p-5'>
             {feature.map((el,index)=>(
             <motion.div
                 initial={{y:-20 , opacity:0}}
                 whileInView={{y:0 , opacity:1}}
                 transition={{duration:0.5 , ease:easeOut , delay:index*0.5}}
-            className='flex gap-5 w-full items-center justify-center'>
-                <div>
-                    <img src={el.img} alt="" />
+            className='flex gap-5 w-full items-center justify-center max-sm:justify-start max-sm:flex-col py-5'>
+                <div >
+                    <img src={el.img} alt="" className='w-10' />
                 </div>
                 <div>
                     <div>
@@ -76,7 +79,7 @@ const Hero = () => {
 
                     </div>
                     <div>
-                        <p className='text-xs'>{el.desc}</p>
+                        <p className='text-xs max-sm:hidden'>{el.desc}</p>
                     </div>
 
                 </div>

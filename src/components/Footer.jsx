@@ -5,7 +5,7 @@ import { socialmedia } from '../Constant'
 const Footer = () => {
   return (
     <div id='aboutus' className='bg-[#F0F2F3]'>
-    <div className='max-w-[70vw] m-auto flex justify-between py-10'>
+    <div className='max-w-[70vw] max-sm:max-w-[100vw] m-auto flex justify-between py-10 max-sm:flex-col max-sm:gap-0 p-5'>
         <div className='max-w-sm flex flex-col gap-5'>
             <div className='flex items-center gap-2 '>
                 <img src={important.logoImg} alt="" className='inline' />

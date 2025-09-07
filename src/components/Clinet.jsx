@@ -12,7 +12,7 @@ const Clinet = () => {
     viewport={{ once: true }}
     
     className='bg-[#F0F2F3]'>
-        <div className='max-w-[70vw] m-auto py-5'>
+        <div className='max-w-[70vw] max-sm:max-w-[90vw] m-auto py-5'>
 
              <div className='flex items-center max-w-[70vw] m-auto justify-center pt-5'>
                             <h1 className='text-2xl font-semibold'>What Clients Say About Us</h1>
@@ -25,10 +25,10 @@ const Clinet = () => {
                 transition={{duration:0.3 , ease:easeOut , delay:0.5}}
                 viewport={{ once: true }} 
                  className=' bg-white rounded-2xl p-5'>
-                    <div className='flex gap-3'>
+                    <div className='flex gap-3 '>
                         <div className='min-w-[1px] min-h-full bg-green-950'></div>
                         <div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus facere et quos amet magni totam adipisci ullam obcaecati, ratione fugit incidunt ea commodi quaerat sit natus tempora quas, iste reprehenderit!</p>
+                            <p className='max-sm:line-clamp-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus facere et quos amet magni totam adipisci ullam obcaecati, ratione fugit incidunt ea commodi quaerat sit natus tempora quas, iste reprehenderit!</p>
                         </div>
                     </div>
                     <div className='mt-4 flex gap-2 items-center justify-start'>
@@ -49,7 +49,7 @@ const Clinet = () => {
                     <div className='flex gap-3'>
                         <div className='min-w-[1px] min-h-full bg-green-950'></div>
                         <div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus facere et quos amet magni totam adipisci ullam obcaecati, ratione fugit incidunt ea commodi quaerat sit natus tempora quas, iste reprehenderit!</p>
+                            <p className='max-sm:line-clamp-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus facere et quos amet magni totam adipisci ullam obcaecati, ratione fugit incidunt ea commodi quaerat sit natus tempora quas, iste reprehenderit!</p>
                         </div>
                     </div>
                     <div className='mt-4 flex gap-2 items-center justify-start'>

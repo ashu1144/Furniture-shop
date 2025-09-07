@@ -3,7 +3,7 @@ import cart from '../assets/cart.png'
 import {easeOut, motion } from "framer-motion";
 const ProductGrid = ({products}) => {
   return (
-    <div className='grid grid-cols-4 grid-rows-2 gap-2 py-5'>
+    <div className='grid grid-cols-4 max-sm:grid-cols-2 grid-rows-2 gap-2 py-5'>
         {products.map((el,index)=>( <motion.div 
           initial={{y:20 , opacity:0}}
           whileInView={{y:0 , opacity:1}}

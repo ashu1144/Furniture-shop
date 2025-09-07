@@ -10,6 +10,7 @@ import OurProducts from './OurProducts'
 import Clinet from './Clinet'
 import RecentlyAdded from './RecentlyAdded'
 import Footer from './Footer'
+import MobileSearch from './MobileSearch'
 const Home = () => {
   return (
   <div>
@@ -17,6 +18,7 @@ const Home = () => {
     <div className='sticky top-0 z-99999'>
       <Navbar></Navbar>
     </div>
+    <MobileSearch></MobileSearch>
     <Categories></Categories>
     <Hero></Hero>
     <Brands></Brands>

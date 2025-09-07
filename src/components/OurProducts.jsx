@@ -5,14 +5,14 @@ import { Routes, Route, NavLink } from 'react-router-dom';
 
 const OurProducts = () => {
   return (
-    <div id='ourproducts' className='max-w-[70vw] m-auto'>
+    <div id='ourproducts' className='max-w-[70vw] max-sm:max-w-[90vw] m-auto'>
         <div className='text-center text-3xl font-semibold p-5 '><h1>Our Product</h1></div>
         
-        <div className='flex items-center justify-center gap-10 font-light text-sm p-10 ' >
+        <div className='flex items-center justify-center gap-10 max-sm:gap-5 font-light text-sm p-10 ' >
             <NavLink className={({ isActive }) => isActive ? 'underline' : 'text-gray-700'} to='/'><h2>All</h2></NavLink>
             <NavLink className={({ isActive }) => isActive ? 'underline' : 'text-gray-700'} to='newest'><h2>NEWEST</h2></NavLink>
             <NavLink className={({ isActive }) => isActive ? 'underline' : 'text-gray-700'} to='trending'><h2>TRENDING</h2></NavLink>
-            <NavLink className={({ isActive }) => isActive ? 'underline' : 'text-gray-700'} to='bestseller'><h2>BEST SELLER</h2></NavLink>
+            <NavLink className={({ isActive }) => isActive ? 'underline' : 'text-gray-700 max-sm:min-w-20 '} to='bestseller'><h2>BEST SELLER</h2></NavLink>
             <NavLink className={({ isActive }) => isActive ? 'underline' : 'text-gray-700'} to='featured'><h2>FEATURED</h2></NavLink>
         </div>
 
