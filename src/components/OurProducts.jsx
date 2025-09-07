@@ -8,7 +8,7 @@ const OurProducts = () => {
     <div id='ourproducts' className='max-w-[70vw] m-auto'>
         <div className='text-center text-3xl font-semibold p-5 '><h1>Our Product</h1></div>
         
-        <div className='flex items-center justify-center gap-10 font-light text-sm ' >
+        <div className='flex items-center justify-center gap-10 font-light text-sm p-10 ' >
             <NavLink className={({ isActive }) => isActive ? 'underline' : 'text-gray-700'} to='/'><h2>All</h2></NavLink>
             <NavLink className={({ isActive }) => isActive ? 'underline' : 'text-gray-700'} to='newest'><h2>NEWEST</h2></NavLink>
             <NavLink className={({ isActive }) => isActive ? 'underline' : 'text-gray-700'} to='trending'><h2>TRENDING</h2></NavLink>
