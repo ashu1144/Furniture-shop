@@ -41,7 +41,7 @@ const RecentlyAdded = () => {
       <div className='overflow-hidden'>
       <div style={{transform:`translateX(${-count*(ismobile?98:70)}vw)  `}} className='flex gap-3 py-5 transition-all duration-300 ease-in-out w-[210vw]'>
         {FeatureProductsList.map((el)=>(
-          <div className='hover:scale-103 duration-300 min-w-48 '>
+          <div className='hover:scale-103 duration-300 min-w-50 '>
             {/* img */}
             <div className='rounded-md'>
               <img src={el.img} alt="" />
