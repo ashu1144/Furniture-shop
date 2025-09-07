@@ -10,9 +10,15 @@ import search from './assets/search1.png'
 import cart from './assets/cart.png'
 import heart from './assets/heart1.png'
 import profile from './assets/Profile.png'
+import twitter from './assets/SocialMedia/twitter.png'
+import pinterest from './assets/SocialMedia/pinterest.png'
+import youtube from './assets/SocialMedia/youtube.png'
+import facebook from './assets/SocialMedia/facebook.png'
+
 import { img } from 'framer-motion/client'
 
 export const important ={heartimg : heart , cartImg: cart , logoImg : logo , profileImg : profile , searchImg:search }
+export const socialmedia = {twitter:twitter , facebook:facebook , pinterest :pinterest , youtube:youtube}
 
 export const FeatureProductsList = [{id:0 ,img:image,title:"Library stool chair",price:"$20"},
     {id:1 ,img:image1,title:"Library stool chair",price:"$20"},

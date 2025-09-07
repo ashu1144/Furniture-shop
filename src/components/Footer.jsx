@@ -1,10 +1,6 @@
 import React from 'react'
 import { important } from '../Constant'
-import twitter from '../assets/SocialMedia/twitter.png'
-import pinterest from '../assets/SocialMedia/pinterest.png'
-import youtube from '../assets/SocialMedia/youtube.png'
-import facebook from '../assets/SocialMedia/facebook.png'
-
+import { socialmedia } from '../Constant'
 
 const Footer = () => {
   return (
@@ -17,10 +13,10 @@ const Footer = () => {
             </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero inventore error fuga debitis qui consectetur saepe enim. Esse, deleniti fugiat.</p>
             <div className='flex gap-2'>
-                <img src={twitter} alt="" />
-                <img src={pinterest} alt="" />
-                <img src={youtube} alt="" />
-                <img src={facebook} alt="" />
+                <img src={socialmedia.facebook} alt="" />
+                <img src={socialmedia.pinterest} alt="" />
+                <img src={socialmedia.youtube} alt="" />
+                <img src={socialmedia.twitter} alt="" />
             </div>
         </div>
         <div className='flex flex-col gap-5'>
