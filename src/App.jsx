@@ -9,7 +9,6 @@ import { BrowserRouter as Router, Routes, Route, NavLink , useLocation } from 'r
 
 
 function App() {
-  const [count, setCount] = useState(0)
   const location = useLocation();
 
   return (
@@ -17,7 +16,7 @@ function App() {
      <Routes>
             <Route path="/login" element={<Login></Login>} />
       </Routes>
-       {location.pathname !== '/login' && <Home />}
+       {location.pathname !== '/Login'  && <Home />}
 
     
     </>

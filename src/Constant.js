@@ -2,9 +2,17 @@ import image from './assets/FeaturedProducts/image.png'
 import image1 from './assets/FeaturedProducts/image1.png'
 import image2 from './assets/FeaturedProducts/image2.png'
 import image3 from './assets/FeaturedProducts/image3.png'
-import cat1 from './assets/Topcat/image4.png'
-import cat2 from './assets/Topcat/image5.png'
-import cat3 from './assets/Topcat/image6.png'
+import cat1 from './assets/topcat/image4.png'
+import cat2 from './assets/topcat/image5.png'
+import cat3 from './assets/topcat/image6.png'
+import logo from './assets/logo.png'
+import search from './assets/search1.png'
+import cart from './assets/cart.png'
+import heart from './assets/heart1.png'
+import profile from './assets/Profile.png'
+import { img } from 'framer-motion/client'
+
+export const important ={heartimg : heart , cartImg: cart , logoImg : logo , profileImg : profile , searchImg:search }
 
 export const FeatureProductsList = [{id:0 ,img:image,title:"Library stool chair",price:"$20"},
     {id:1 ,img:image1,title:"Library stool chair",price:"$20"},

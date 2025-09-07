@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../assets/Logo.png'
+import { important } from '../Constant'
 import twitter from '../assets/SocialMedia/twitter.png'
 import pinterest from '../assets/SocialMedia/pinterest.png'
 import youtube from '../assets/SocialMedia/youtube.png'
@@ -12,7 +12,7 @@ const Footer = () => {
     <div className='max-w-[70vw] m-auto flex justify-between py-10'>
         <div className='max-w-sm flex flex-col gap-5'>
             <div className='flex items-center gap-2 '>
-                <img src={logo} alt="" className='inline' />
+                <img src={important.logoImg} alt="" className='inline' />
                  <span className='text-xl'>Comforty</span>
             </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero inventore error fuga debitis qui consectetur saepe enim. Esse, deleniti fugiat.</p>
