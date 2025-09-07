@@ -28,7 +28,7 @@ const Login = () => {
                             <input type="checkbox" id="myCheckbox" className='mt-3 scale-120 ml-2' />
                             <label htmlFor="myCheckbox" className='ml-2'>Remeber Password</label>
                         </div>
-                        <h1>Forgot Password</h1>
+                        <h1 className='max-sm:mt-8 max-sm:text-sm'>Forgot Password</h1>
                     </div>
                     <div className='p-2 text-white'>
                         <button className='w-full bg-[#029FAE] p-1 rounded-lg'>Login</button>

@@ -28,7 +28,7 @@ const RecentlyAdded = () => {
     whileInView={{y:0 , opacity:1}}
     transition={{duration:0.3 , ease:easeOut , delay:0.2}}
     viewport={{ once: true }}
-    className='w-[70vw] max-sm:w-[90vw] m-auto py-5'>
+    className='w-[70vw] max-sm:w-[100vw] m-auto py-5 max-sm:px-2'>
 
       <div className='flex items-center justify-between'>
         <h1 className='text-2xl font-semibold'>Featured Products</h1>
@@ -39,9 +39,9 @@ const RecentlyAdded = () => {
       </div>
       {/* 'style={{transform: `translateX(-${count * (ismobile ? 100 : 85)}vw)`}} */}
       <div className='overflow-hidden'>
-      <div style={{transform:`translateX(${-count*(ismobile?92:70)}vw)  `}} className='flex gap-3 py-5 transition-all duration-300 ease-in-out w-[210vw]'>
+      <div style={{transform:`translateX(${-count*(ismobile?98:70)}vw)  `}} className='flex gap-3 py-5 transition-all duration-300 ease-in-out w-[210vw]'>
         {FeatureProductsList.map((el)=>(
-          <div className='hover:scale-103 duration-300 min-w-45 '>
+          <div className='hover:scale-103 duration-300 min-w-48 '>
             {/* img */}
             <div className='rounded-md'>
               <img src={el.img} alt="" />
