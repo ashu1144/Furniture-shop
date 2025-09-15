@@ -18,7 +18,7 @@ const Hero = () => {
 
 
     const slideContent = [
-        {id:2,
+        {id:3,
         img:slideimg3,
         desc:"Best Furniture Collection for your interior."},
         {id:1,
@@ -61,11 +61,12 @@ const Hero = () => {
             initial={{y:100 , opacity:0}}
             whileInView={{y:0 , opacity:1}}
             transition={{duration:0.3 , ease:easeOut , delay:0.1}}
-            viewport={{once:"true"}}
+            viewport={{once:true}}
         
         className='max-w-[70vw] max-sm:max-w-[100vw] m-auto bg-white flex gap-10 max-sm:gap-10 rounded-2xl z-10 relative p-10 max-sm:p-5'>
             {feature.map((el,index)=>(
             <motion.div
+                key={el.id}
                 initial={{y:-20 , opacity:0}}
                 whileInView={{y:0 , opacity:1}}
                 transition={{duration:0.5 , ease:easeOut , delay:index*0.5}}

@@ -4,8 +4,6 @@ import OfferBanner from './OfferBanner'
 import Footer from './Footer'
 const Login = () => {
   return (<div>
-        <OfferBanner></OfferBanner>
-        <Navbar></Navbar>
         <div>
             <div className='w-[85vw]  bg-[#F0F2F3] h-[10vh] m-auto rounded-b-[60px] px-15 py-5'>
                 <div className='flex gap-2 font-light'>
@@ -37,8 +35,6 @@ const Login = () => {
             </div>
 
         </div>
-
-        <Footer></Footer>
   
   </div>)
 }

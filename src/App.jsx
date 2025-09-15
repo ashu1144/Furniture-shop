@@ -1,24 +1,32 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import Home from './components/Home'
-import Login from './components/Login'
 import './App.css'
-import { BrowserRouter as Router, Routes, Route, NavLink , useLocation } from 'react-router-dom';
-
-
-
+import Home from './components/Home'
+import { Routes, Route } from 'react-router-dom'
+import Login from './components/Login'
+import Cart from './components/Cart'
+import Navbar from './components/Navbar'
+import OfferBanner from './components/OfferBanner'
+import Footer from './components/Footer'
+ 
 function App() {
-  const location = useLocation();
+  const [count, setCount] = useState(0)
 
   return (
     <>
-     <Routes>
-            <Route path="/login" element={<Login></Login>} />
+      <OfferBanner />
+      <div className='sticky top-0 z-99999'>
+        <Navbar />
+      </div>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/newest' element={<Home />} />
+        <Route path='/trending' element={<Home />} />
+        <Route path='/bestseller' element={<Home />} />
+        <Route path='/featured' element={<Home />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/cart' element={<Cart />} />
       </Routes>
-       {location.pathname !== '/Login'  && <Home />}
-
-    
+      <Footer />
     </>
   )
 }

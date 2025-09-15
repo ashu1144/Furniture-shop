@@ -1,15 +1,23 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import { important } from '../Constant';
+import { useSelector } from 'react-redux';
+import CartIcon from './CartIcon';
 
 const Navbar = () => {
     const navigate = useNavigate();
+    const { totalQuantity } = useSelector((state) => state.cart);
+    
     const goToLogin = () => {
-    navigate('/Login');  // yeh programmatically navigate karega
-  }
-   const goToHome = () => {
-    navigate('/');  // yeh programmatically navigate karega
-  }
+      navigate('/Login');  // yeh programmatically navigate karega
+    }
+    const goToHome = () => {
+      navigate('/');  // yeh programmatically navigate karega
+    }
+    
+    const goToCart = () => {
+      navigate('/cart');
+    }
 
 
   return (
@@ -27,10 +35,10 @@ const Navbar = () => {
 
         <div className='flex max-sm:gap-1 gap-4 items-center justify-center'>
             
-            <div className='flex gap-2 max-sm:gap-1  items-center justify-center p-2 max-sm:p-1 rounded-xl bg-[#ffff] cursor-pointer hover:bg-[#F0F2F3] ease-in-out duration-300 transition-all'>
+            <div onClick={goToCart} className='flex gap-2 max-sm:gap-1 items-center justify-center p-2 max-sm:p-1 rounded-xl bg-[#ffff] cursor-pointer hover:bg-[#F0F2F3] ease-in-out duration-300 transition-all'>
                 <span className='font-light'>Cart</span>
                 <img src={important.cartImg} alt="" className='h-5' />
-                <div className='  size-5 bg-green-950 rounded-full text-white text-center'><p className='text-sm'>1</p></div>
+                <div className='size-5 bg-green-950 rounded-full text-white text-center'><p className='text-sm'>{totalQuantity || 0}</p></div>
             </div>
             <div className='p-2 rounded-xl bg-[#ffff] cursor-pointer hover:bg-[#F0F2F3] ease-in-out duration-300 transition-all '>
                 <img src={important.heartimg} alt="" className='h-5' />
