@@ -34,7 +34,7 @@ const Clinet = () => {
                     <div className='mt-4 flex gap-2 items-center justify-start'>
                         <div className='w-10 h-10 rounded-full border-2 border-zinc-400 p-2 '><img src={profile} alt="" /></div>
                         <div>
-                            <h py-51 className='text-sm font-semibold'>hardik pandey</h>
+                            <h1 className='text-sm font-semibold'>hardik pandey</h1>
                             <p className='text-xs font-light'>bohot acha hai janab </p>
                         </div>
                     </div>
@@ -55,7 +55,7 @@ const Clinet = () => {
                     <div className='mt-4 flex gap-2 items-center justify-start'>
                         <div className='w-10 h-10 rounded-full  border-2 border-zinc-400 p-2'><img src={profile} alt="" /></div>
                         <div>
-                            <h py-51 className='text-sm font-semibold'>hardik pandey</h>
+                            <h1 className='text-sm font-semibold'>hardik pandey</h1>
                             <p className='text-xs font-light'>bohot acha hai janab </p>
                         </div>
                     </div>

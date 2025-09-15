@@ -8,11 +8,16 @@ const ProductCard = ({ product, index }) => {
   const dispatch = useDispatch();
 
   const handleAddToCart = () => {
+    // Convert price from string format (e.g. "$20") to number format (e.g. 20)
+    const priceValue = typeof product.price === 'string' && product.price.startsWith('$') 
+      ? parseFloat(product.price.substring(1)) 
+      : product.price;
+      
     dispatch(addToCart({
       id: product.id || index,
-      name: product.title,
-      price: parseFloat(product.price.replace('$', '')),
-      image: product.img,
+      name: product.name || product.title,
+      price: priceValue,
+      image: product.image || product.img,
     }));
   };
 
@@ -26,12 +31,12 @@ const ProductCard = ({ product, index }) => {
     >
       {/* img */}
       <div className="rounded-md">
-        <img src={product.img} alt={product.title} />
+        <img src={product.image || product.img} alt={product.name || product.title} className="w-full h-48 object-cover" />
       </div>
       {/* desc */}
       <div className="flex justify-between items-center p-1">
         <div>
-          <h1 className="font-semibold">{product.title}</h1>
+          <h1 className="font-semibold">{product.name || product.title}</h1>
           <p className="text-sm">{product.price}</p>
         </div>
 
